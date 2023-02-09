@@ -1,0 +1,3 @@
+[submodule "robotis_tools"]
+	path = robotis_tools
+	url = https://github.com/ROBOTIS-GIT/robotis_tools
