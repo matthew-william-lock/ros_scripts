@@ -10,6 +10,8 @@ A collection of tools and scripts for working with ROS.
 git clone --recurse-submodules https://github.com/matthew-william-lock/ros_scripts
 ```
 
+# Scripts
+
 ### Installing ROS Melodic on Ubuntu 18.04
 
 ```bash
@@ -29,3 +31,16 @@ This will also create some useful aliases for working with ROS.
 | `cw` | Changes the current working directory to the `$name_catkin_workspace` folder. |
 | `cs` | Changes the current working directory to the `src` folder within the `$name_catkin_workspace` folder. |
 | `cm` | Changes the current working directory to the `$name_catkin_workspace` folder and runs the `catkin_make` command to build a ROS package. |
+
+# Commands
+
+## Creating a Catkin Package
+
+Full documentation for creating a catkin package can be found [here](http://wiki.ros.org/ROS/Tutorials/CreatingPackage).
+
+```bash
+cd ~/catkin_ws/src
+catkin_create_pkg <pkg_name>  std_msgs rospy roscpp
+```
+
+> This will create a <pkg_name> folder which contains a package.xml and a CMakeLists.txt, which have been partially filled out with the information you gave catkin_create_pkg.
